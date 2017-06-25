@@ -6,7 +6,7 @@ var Todo = React.createClass({
 
     return (
       <div>
-        {id}, {text}
+        {id}. {text}
       </div>
     )
   }
