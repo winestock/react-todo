@@ -12,12 +12,14 @@ export class TodoApp extends React.Component {
     e.preventDefault();
 
     dispatch(actions.startLogout());
+    // The startLogout function is the last one in the actions.jsx file.
   }
   render () {
     return (
       <div>
         <div className="page-actions">
           <a href="#" onClick={this.onLogout.bind(this)}>Logout</a>
+          // The ".bind(this)" is necessary because React does not have autobinding in its class model.
         </div>
 
         <h1 className="page-title">Todo App</h1>
