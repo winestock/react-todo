@@ -7,6 +7,7 @@ export class TodoList extends React.Component {
   render () {
     var {todos, showCompleted, searchText} = this.props;
     var renderTodos = () => {
+      // TodoAPI.jsx is in 'app/api'.  It's the component that handles local storage.
       var filteredTodos = TodoAPI.filterTodos(todos, showCompleted, searchText);
 
       if (filteredTodos.length === 0) {
@@ -15,6 +16,7 @@ export class TodoList extends React.Component {
         );
       }
 
+      // The '.map()' function takes each todo and puts it in its own <Todo> component.
       return filteredTodos.map((todo) => {
         return (
           <Todo key={todo.id} {...todo}/>
