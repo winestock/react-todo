@@ -8,6 +8,10 @@ export class AddTodo extends React.Component {
     var {dispatch} = this.props;
     var todoText = this.refs.todoText.value;
 
+    // If the user presses the Return key without entering actual text,
+    // then keep focus on the form.  If actual text was entered into the form,
+    // then invoke the 'startAddTodo' function in the actions.jsx file in the
+    // app/actions directory.
     if (todoText.length > 0) {
       this.refs.todoText.value = '';
       dispatch(actions.startAddTodo(todoText));
