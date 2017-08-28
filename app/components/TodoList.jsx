@@ -32,6 +32,7 @@ export class TodoList extends React.Component {
   }
 };
 
+// The connect() function, provided by Redux, connects the state of the store to the component <TodoList>.
 export default connect(
   (state) => {
     return state;

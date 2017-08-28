@@ -27,6 +27,8 @@ export class TodoSearch extends React.Component {
   }
 };
 
+// The connect() function, provided by Redux, connects the state of the store to the <TodoSearch> component.
+// In this case, it connects the completed todos and their text to <TodoSearch>.
 export default connect(
   (state) => {
     return {

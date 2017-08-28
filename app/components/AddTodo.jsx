@@ -27,4 +27,5 @@ export class AddTodo extends React.Component {
   }
 };
 
+// The connect() function, provided by Redux, connects the Redux store to the <AddTodo> component.
 export default connect()(AddTodo);

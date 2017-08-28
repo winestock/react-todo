@@ -38,4 +38,5 @@ export class TodoApp extends React.Component {
   }
 };
 
+// The Redux.connect() function connects the Redux store to the <TodoApp> component.
 export default Redux.connect()(TodoApp);

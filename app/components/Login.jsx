@@ -34,4 +34,5 @@ export class Login extends React.Component {
   }
 };
 
+// The Redux.connect() function connects the Redux store to the <Login> component.
 export default Redux.connect()(Login);
