@@ -2,6 +2,13 @@ import moment from 'moment';
 
 import firebase, {firebaseRef, githubProvider} from 'app/firebase/';
 
+// This file is meant to be used with the 'reducers.jsx' file in the 'app/reducers' directory.
+
+// In Redux, 'actions' are payloads of information that send data from the app to the Redux store.
+// Actions are the only source of information for the store.  They are sent to the store using store.dispatch()
+// Actions describe the fact that something happened.  They do not specify how the state of the application
+// changes in response.  That is the job of reducers.
+
 export var setSearchText = (searchText) => {
   return {
     type: 'SET_SEARCH_TEXT',

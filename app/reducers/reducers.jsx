@@ -1,6 +1,13 @@
 var uuid = require('node-uuid');
 var moment = require('moment');
 
+// This file is meant to be used with 'actions.jsx' file in the 'app/actions' directory.
+
+// A reducer must be a pure function.  It is passed to the Redux store.
+// The reducer takes two functions as arguments.  The first argument is the state of the store
+// before the action is triggered.  The second argument is the action that was triggered.
+// The two arguments must be combined in order to get something new.
+
 export var searchTextReducer = (state = '', action) => {
   switch (action.type) {
     case 'SET_SEARCH_TEXT':
