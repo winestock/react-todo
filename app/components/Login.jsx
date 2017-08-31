@@ -10,7 +10,7 @@ export class Login extends React.Component {
   }
   onLogin () {
     var {dispatch} = this.props;
-
+    // See the startLogin function in the actions.jsx file in the 'app/actions' directory.
     dispatch(actions.startLogin());
   }
   render () {
