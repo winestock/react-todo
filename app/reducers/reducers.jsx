@@ -2,6 +2,7 @@ var uuid = require('node-uuid');
 var moment = require('moment');
 
 // This file is meant to be used with 'actions.jsx' file in the 'app/actions' directory.
+// The file configureStore.jsx in the 'app/store' directory hooks them up.
 
 // A reducer must be a pure function.  It is passed to the Redux store.
 // The reducer takes two functions as arguments.  The first argument is the state of the store
